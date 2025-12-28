@@ -148,6 +148,8 @@ AI copilots for teams and organizations
 Project Overview Images:
 -------------------------
 
+<img width="1882" height="889" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/0b7b94bf-724a-4656-b42c-7a2c3e0cab8e" />
+
 <img width="1888" height="888" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/6956c77c-667d-4f61-bc54-1d1460afb441" />
 
 <img width="1920" height="879" alt="Screenshot (57)" src="https://github.com/user-attachments/assets/76ee0a7b-28a5-4a38-a0bc-7dc75e81c8c4" />
