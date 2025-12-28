@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: ai_automation_mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: ai_automation
+
+  backend:
+    build: .
+    container_name: ai_automation_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    depends_on:
+      - mongodb
+    volumes:
+      - ./workspace:/app/workspace
+
+volumes:
+  mongodb_data:
